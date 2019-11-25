@@ -1,0 +1,14 @@
+#main #slogan {
+    font-size: 30px;
+    width: 500px;
+    color: #ccc;
+    margin: 10% auto 0
+}
+
+#main #slogan #name {
+    font-size: 60px
+}
+
+#main #slogan #intro {
+    float: right
+}
