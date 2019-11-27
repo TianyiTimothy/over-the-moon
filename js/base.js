@@ -1,10 +1,20 @@
-window.onload = function() {
-    $("#header").html('<a href="index.html"><div class="container"><img id="logo" src="img/moon.png" alt="logo"/></a><ul><li><a href="index.html">Home</a></li><li><a href="#">Menu</a></li><li><a href="sitemap.html">Site Map</a></li><li><a href="aboutus.html">About Us</a></li></ul></div>');
-    $("#footer").html('<embed id="astronaut" src="img/astronaut.svg" />');
 
-
-
-
+window.location.hash='/index.html'
+window.addEventListener('hashchange', function (event) {
+    let iframe = document.createElement('iframe')
+    iframe.src = location.hash.replace('#/', '')
+    document.body.append(iframe)
+    iframe.style.display = 'none'
+    iframe.onload = function () {
+        let main = document.getElementById('main')
+        main.innerHTML = ''
+        main.append(iframe.contentDocument.getElementById('main'))
+        document.body.removeChild(iframe)
+    }
+})
+window.onload = function () {
+    // $("#header").html('<a href="index.html"><div class="container"><img id="logo" src="img/moon.png" alt="logo"/></a><ul><li><a href="index.html">Home</a></li><li><a href="#">Menu</a></li><li><a href="sitemap.html">Site Map</a></li><li><a href="aboutus.html">About Us</a></li></ul></div>');
+    // $("#footer").html('<embed id="astronaut" src="img/astronaut.svg" />');
     // footer part
 
     // animation of astronaut
