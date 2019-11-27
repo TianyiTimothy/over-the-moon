@@ -1,0 +1,83 @@
+@keyframes move-background {
+    from {
+        -webkit-transform: translate3d(-500px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(500px, 0px, 0px);
+    }
+}
+
+@-webkit-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(-500px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(500px, 0px, 0px);
+    }
+}
+
+@-moz-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(-500px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(500px, 0px, 0px);
+    }
+}
+
+@-webkit-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(-500px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(500px, 0px, 0px);
+    }
+}
+
+.background-container {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.stars {
+    background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    float: left;
+    position: absolute;
+    top:0;
+}
+
+.twinkling {
+    width: 10000px;
+    height: 100%;
+    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+    background-size: 1000px 1000px;
+    z-index: 2;
+    -moz-animation: move-background 10s linear infinite alternate;
+    -ms-animation: move-background 10s linear infinite alternate;
+    -o-animation: move-background 10s linear infinite alternate;
+    -webkit-animation: move-background 10s linear infinite alternate;
+    animation: move-background 10s linear infinite alternate;
+    float: left;
+    position: absolute;
+    top: 0;
+}
+
+.moon {
+    height: 70vh;
+    width: 70vh;
+    position: absolute;
+    right: 20px;
+    z-index: 3;
+}
+
+
+/* reference: https://codepen.io/agoodwin/pen/NMJoER */
+
+
+/* author: ANASTASIA GOODWIN */

@@ -14,7 +14,7 @@ window.onload = function() {
     var otr = 0;
 
     function moveAstronaut() {
-        console.log(1);
+        // recover to the first place
         if (oml < 0) {
             oml = 2000;
             $("#astronaut").hide();
@@ -24,9 +24,11 @@ window.onload = function() {
             return;
         }
         $("#astronaut").show();
-        // margin-left
+        // margin-left: 100~200 px
         var ml = Math.floor(Math.random() * 100) + 100;
+        // margin-top: 0~100 px
         var mt = Math.floor(Math.random() * 100);
+        // transform rotate: -80~80 deg
         var tr = Math.floor(Math.random() * 160) - 80;
         oml -= ml;
         $("#astronaut").css("margin-left", oml + "px");
@@ -34,5 +36,6 @@ window.onload = function() {
         $("#astronaut").css("transform", "rotate(" + tr + "deg)");
 
     };
+    // keep running moveAstronaut code
     setInterval(moveAstronaut, 2000);
 }
