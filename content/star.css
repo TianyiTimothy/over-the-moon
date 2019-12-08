@@ -69,8 +69,8 @@
 }
 
 .moon {
-    height: 70vh;
-    width: 70vh;
+    height: 300px;
+    width: 300px;
     position: absolute;
     right: 20px;
     z-index: 3;
