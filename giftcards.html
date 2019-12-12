@@ -1,0 +1,217 @@
+<!doctype html
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="content/giftcards.css" rel="StyleSheet">
+	<link href="content/base.css" rel="StyleSheet">
+	<title>Order Over the Moon E-gift cards</title>
+
+	<!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/base.js"></script>
+	<script type="text/javascript" src="js/giftcards.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Caesar+Dressing&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+
+	<header id="header"></header>
+	<div id="GiftCardPageLayout" class="giftcardpage">
+		<div class="banner_container">
+			<div class="banner_text">
+				<h1>Give the dedivcious gift with OVER THE MOON E-Gift cards!</h1>
+				<button type="button" id="custom_giftcard_button" class="button_text">Create custom e-gift cards</button>
+			</div>
+
+		</div>
+		<div class="giftcard_content">
+			<div class="giftcard_text">
+				<h3>Christmas is right around the corner...!</h3>
+				<p>Gift cards are the perfect way to say <b>"Merry Christmas"</b>,<b>"I love you"</b>,</b>"Good-Bye..Leave the
+					earth"</b> or just <b>"Hey..!"</b></p>
+				<p>Our gift cards are easy to purchase ondivne through our secure website for instant, at home printing or in-store
+					pick up at our moon location</p>
+
+			</div>
+
+		</div>
+		<form>
+			<div class="customgiftform" id="gift_form_fill">
+				<section>
+					<div class="carousel_main" id="carousel_main_pictures">
+						<h3>Give a perfect gift</h3>
+						<h4>Send a gift instantly in any amount you choose along with the message card</h4>
+						<div id="carouselHolder" class="carousel">
+
+							<div class="carousel_move fade">
+
+								<img id="mainImg" src="img/giftcard_background.JPG" alt="giftcard_background">
+								<figcaption>Over the moon Gift Card</figcaption>
+
+							</div>
+							<div class="carousel_move fade">
+
+								<img class="slideImg" src="img/christmas.jpg" alt="Christmas">
+								<figcaption>Happy Christmas</figcaption>
+
+							</div>
+							<div class="carousel_move fade">
+
+								<img class="slideImg" src="img/christmas-feature.jpg" alt="Christmas">
+								<figcaption>Happy Christmas</figcaption>
+
+							</div>
+							<div class="carousel_move fade">
+
+								<img class="slideImg" src="img/drink_christmas.jpg" alt="drink_christmas">
+								<figcaption>Drinking_Christmas</figcaption>
+
+							</div>
+							<div class="carousel_move fade">
+
+								<img class="slideImg" src="img/engagement.jpg" alt="Happy engagement">
+								<figcaption>Happy engagement</figcaption>
+
+							</div>
+							<div class="carousel_move fade">
+
+								<img class="slideImg" src="img/Anniversary-Wishes.jpg" alt="Anniversary-Wishes">
+								<figcaption>Happy Anniversary</figcaption>
+
+							</div>
+							<div class="carousel_move fade">
+
+								<img class="slideImg" src="img/Happy-birthday-images.jpg" alt="Happy-birthday">
+								<figcaption>Happy Birthday</figcaption>
+
+							</div>
+							<div class="carousel_move fade">
+
+								<img class="slideImg" src="img/happyNewYear.jpg" alt="happyNewYear">
+								<figcaption>Happy New Year</figcaption>
+
+							</div>
+							<div class="carousel_move fade">
+
+								<img class="slideImg" src="img/Thanks.jpg" alt="Thanks">
+								<figcaption>Thanks a Bildivon</figcaption>
+
+							</div>
+
+
+
+							<div class="carouselnav">
+								<a id="left_arrow" class="left_arrow">&#10094;</a>
+								<a id="right_arrow" class="right_arrow">&#10095;</a>
+							</div>
+						</div>
+
+					</div>
+
+				</section>
+
+				<div class="field_group">
+					<div class="field_group_label">E-GIFT CARD AMOUNT</div>
+					<div class="field_group_row">
+						<div class="segment_label" id="giftCardAmount_50">CA$50.00</div>
+						<div class="segment_label" id="giftCardAmount_100">CA$100.00</div>
+						<div class="segment_label" id="giftCardAmount_150">CA$150.00</div>
+						<div class="segment_label" id="giftCardAmount_200">CA$200.00</div>
+						<div class="segment_label" id="segment_label_custom">CUSTOM</div>
+					</div>
+					<div class="enter_custom_amount" id="custom_amount">
+						<input placeholder="CA$1 to CA$1,000" class="fill_custom_amount" type="text">
+					</div>
+				</div>
+				<div class="field_group">
+					<div class="field_group_label">PROMOTION CODE</div>
+					<div class="field_group_row">
+						<div class="discount_field">
+							<input placeholder="MYDISCOUNTCODE" class="discount_code" type="text">
+
+						</div>
+					</div>
+				</div>
+				<div class="flex-row">
+					<div class="flex-col">
+						<div class="field_group">
+							<div class="field_group_label" id="Recipient_Name">Recipient Name</div>
+							<div class="field_group_row">
+								<input id="rninput" placeholder="RECIPIENT NAME" class="r_name" type="text">
+							</div>
+						</div>
+					</div>
+					<div class="flex-col">
+						<div class="field_group">
+							<div class="field_group_label">Recipient Email</div>
+							<div class="field_group_row">
+								<input id="reinput" placeholder="RECIPIENT EMAIL" class="r_email" type="text">
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="flex-row">
+					<div class="flex-col">
+						<div class="field_group">
+							<div class="field_group_label">Your Name</div>
+							<div class="field_group_row">
+								<input id="yninput" placeholder="YOUR NAME" class="y_name" type="text">
+							</div>
+						</div>
+					</div>
+					<div class="flex-col">
+						<div class="field_group">
+							<div class="field_group_label">Your Email</div>
+							<div class="field_group_row">
+								<input id="yeinput" placeholder="YOUR EMAIL" class="y_email" type="text">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="field_group">
+					<div class="field_group_label">Personal Message
+						<i>(optional)</i>
+					</div>
+					<div class="field_group_row">
+						<textarea id="personal_msg" class="personal_msg"></textarea>
+					</div>
+				</div>
+				<div class="field_group">
+					<div class="field_group_label ">Delivery</div>
+					<div class="field_group_row" id="gift_delivery">
+						<div class="segment_label" id="sendInstantly">Send instantly</div>
+						<div class="segment_label" id="pickADate"> Pick a date</div>
+					</div>
+					<div>
+						<input placeholder="Click to pick the date" type="date" id="datepicker" />
+					</div>
+				</div>
+				<div class="field_group">
+					<div class="field_group_row">
+						<button id="button_submit" class="button_submit" type="submit">SUBMIT</button>
+					</div>
+				</div>
+		</form>
+		<div id="final_message">
+			<h2 id="newMsgBox">Thanks!</h2>
+			<p>Please confirm the information provided..!!</p>
+			<nav>
+				<ul>
+					<li>Wishes:<span id="wishes"></span></li>
+					<li>Recipient Name:<span id="recipientname"></span></li>
+					<li>Recipient Email: <span id="recipientemail"></span></li>
+					<li>Amount:<span id="amount"></span></li>
+					<li>Date:<span id="date"></span></li>
+				</ul>
+			</nav>
+			<div class="field_group_row">
+				<button id="button_confirm" class="button_submit" type="button">CONFIRM</button>
+			</div>
+		</div>
+	</div>
+	</div>
+	<footer id="footer"></footer>
+</body>
+</html>

@@ -1,0 +1,325 @@
+* {
+  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+body {
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+p {
+    color: #686868;
+}
+.Banner_Container{
+	background-image: linear-gradient(rgba(22, 22, 22, 0.5) 0%, rgba(22, 22, 22, 0.5) 100%) url(../img/BannerBackground.jpg); 
+	background-repeat: no-repeat;
+    background-size: 100%;
+    height: 375px;
+    position: relative;
+	opacity: 1;
+}
+.Banner_Text{
+    position: absolute;
+	text-align: center;
+    padding: 30px ;	
+    font-size: 30px;   
+    line-height: 70px;
+    color: #fff;
+    z-index: 1;
+}
+.banner_button{
+	padding: 225px 525px 100px;
+	
+}
+.button_text{	
+	background-color: #DDAA00;
+	border: none ;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 12px;
+	cursor: pointer;
+	margin-top: 40px;
+	
+}
+.Button_Text span {
+  
+  position: relative;
+  transition: 0.5s;
+}
+
+.Button_Text span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+ 
+}
+
+.Button_Text:hover span {
+  padding-right: 25px;
+  cursor: pointer;
+}
+
+.Button_Text:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+//gift card content
+
+.GiftCard_Content{
+	padding: padding: 60px 100px;
+    
+}
+.GiftCard_text{	
+	background: black;	
+}
+.GiftCard_text h3{
+	text-align: center;
+	font-size: 32px;
+    color: #DDAA00;
+    padding: 10px 0;
+    margin: 20px;
+}
+.GiftCard_text p{
+	font-size: 16px;
+    padding-bottom: 15px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+
+.customgiftform{
+	display: none;
+	
+}
+
+
+.carousel_main{
+	background: black;
+}
+.carousel_main h3{
+	font-size:26px;
+	margin-bottom:10px;
+	margin-top: 30px;
+	text-align: center;
+	color: #DDAA00;
+	padding-top: 10px;
+}
+
+.carousel_main h4{
+	font-size:18px;
+	margin-bottom:10px;
+	text-align: center;
+	color: #DDAA00;
+}
+.carousel_main figcaption{
+	padding-top:15px;
+	    color: white;
+}
+.carousel_main .carousel_move{
+	padding:20px;
+	text-align:center;
+	display:none;
+	min-height:200px;
+}
+
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.carousel_main ul li:first-child{
+	display:block;
+}
+
+.carouselnav{
+	height:50px;
+	overflow:hidden;
+	position:relative;
+}
+
+.carouselnav .left_arrow, .carouselnav .right_arrow{
+	width:60px;
+	height:60px;
+	
+}
+
+.carouselnav .left_arrow:hover, .carouselnav .right_arrow:hover{
+	cursor:pointer;
+}
+	
+
+.carouselnav .left_arrow:after{
+	content: '';
+	
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left: 8px solid #DDAA00;
+	width: 0px;
+	height: 0px;
+	position:absolute;
+	
+	top:0px;
+	bottom:0px;
+	margin: auto 0;
+	right:40px;
+}
+
+.carouselnav .right_arrow:after{
+	content: '';
+	
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-right: 8px solid #DDAA00;
+	width: 0px;
+	height: 0px;
+	position:absolute;
+	
+	top:0px;
+	bottom:0px;
+	margin: auto 0;
+	left:40px;
+
+}
+
+.carouselnav .right_arrow:hover, .carouselnav .left_arrow:hover{
+	cursor:pointer;
+}
+
+.carousel img{
+	width:30%;
+
+}	
+form{
+	margin-top: 20px;
+	margin-left: 20%;
+	margin-right: 20%;
+	display: block;
+}
+.field_group_row{
+	padding: 6px 0;	
+}
+
+.segment_label{
+	flex: 1;
+	flex-grow: 1;
+	flex-shrink:1;
+	min-height: 48px;
+	padding: 15px 0;
+	font-weight:500;
+	font-size:15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	color: #DDAA00;
+	letter-spacing: 0.05em;
+	border: 1px solid #ddaa00;
+    width: 20%;
+    float: left;
+	border-radius: 3px;
+    margin-bottom: 20px;
+}
+#gift_delivery{
+	 width: 1250px;
+}
+.segmentLabel {
+    float: none;
+}
+body, button, input{
+	
+	-webkit-font-smoothing: antialiased;
+}
+input{
+	border-style: solid;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	border-radius: 3px;
+	border-width: 1px;
+	padding: 15px 300px 15px 5px;
+	font-size:15px;
+	outline-color: initial;
+	outline-style: initial;
+	outline-width: 0px;
+	border-color: #DDAA00;
+}
+.enter_custom_amount{
+	
+	display: none;
+}
+.field_group_label{
+	padding: 5px 0;
+    font-weight: bold;
+}
+
+#datepicker{
+	display:none;
+}
+.button_submit{	
+	background-color: #DDAA00;
+	border: none ;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 12px;
+	cursor: pointer;
+	margin-top: 40px;
+	width: 100%;
+}
+
+#final_message{
+	padding: 10px;
+		
+}
+#final_message p{
+	padding: 10px;
+	margin-top: 10px;
+		
+}
+#newMsgBox{
+	
+	text-align:center;
+}
+#final_message nav ul{
+	 padding:10px;
+	 margin: 5px;
+	 line-height: 2em;
+}
+
+#final_message nav ul li{
+	 padding:10px;
+	 font-size: 25px;
+    font-weight: bold;
+	 

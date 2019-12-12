@@ -1,0 +1,78 @@
+html{
+	box-sizing: border-box;
+}
+*,*::before, *::after{
+	box-sizing: inherit;
+}
+body{
+	background-color: black;
+
+}
+#main{
+	font-family:'Caesar Dressing', cursive;
+}
+
+#head{
+	font-size: 50px;
+	background-color:black;
+	height:4em;
+	width:10em;
+	color:#ddaa00;
+	border-radius: 50%;
+	text-align: center;
+	margin-left:32%;
+	padding-top:30px;
+}
+#lines{
+	background-image: url('../img/lines.jpg');
+}
+#special{
+	font-size: 30px;
+	color:#ddaa00;
+	text-align: center;
+	margin:1em;
+}
+#menu{
+	color:black;
+	display: flex;
+	flex-flow: row wrap;
+	border:1px solid black;
+	margin:2em;
+	margin-left:10em;
+	margin-right:10em;
+	padding-left:10em;
+	padding-right:10em;
+}
+.week{
+	width:10em;
+	height:8em;	
+	background-color:grey;
+	margin:1em;
+	flex:2 1 40%;
+
+}
+.icon{
+	font-size:80px;
+	margin-left:10px;
+	float: left;
+}
+.day{
+	float:left;
+	transform: rotate(-90deg);
+	font-size: 28px;
+	margin-top:1.7em;
+	margin-left:1em;
+}
+.icont{
+	font-size: 60px;
+}
+.dish{
+	font-size: 20px;
+	text-align: center;
+	padding-top:2em;
+	float:right;
+	margin-right:1em;
+}
+.dish1{
+	margin-right:10px;
+}

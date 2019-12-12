@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <link rel="stylesheet" href="content/base.css">
-    <link href="https://fonts.googleapis.com/css?family=Caesar+Dressing&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="content/sitemap.css">
-    <script src="js/base.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-    <title>Site Map</title>
-</head>
+	<head>
+		<link rel="stylesheet" href="content/base.css">
+		<link href="https://fonts.googleapis.com/css?family=Caesar+Dressing&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="content/sitemap.css">
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/base.js"></script>
+		<title>Site Map</title>
+	</head>
 
-<body id="body">
-    <header id="header"></header>
-    <main id="main" style="color: aliceblue;">
-        <div class="pagebox">HOME</div>
-        <div class="pagebox">INFO</div>
-        <div class="pagebox">ABOUT US</div>
-        <div class="pagebox">CONTACT US</div>
-        <div class="pagebox">GIFT CARDS</div>
-        <div class="pagebox">ABOUT US</div>
+	<body id="body">
+		<header id="header"></header>
+		<main id="main" style="color: aliceblue;">
+			<div id="sitemapWrapper">
+				<ul id="sitemap">
+					<li>
+						<a href="index.html">HOME</a>
+						<ul>
+							<li>
+								<a href="menu.html">MENU</a>
+							</li>
+							<li>
+								<a href="specials.html">SPECIALS</a>
+								<ul>
+									<li><a href="specials.html">DAILY SPECIALS</a></li>
+									<li><a href="eventsbooking.html">EVENTS/BOOKING</a></li>
+									<li><a href="giftcards.html">GIFT CARDS</a></li>
+									<li><a href="contests.html">CONTESTS</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="aboutus.html">ABOUT</a>
+								<ul>
+									<li><a href="aboutus.html">ABOUT US</a></li>
+									<li><a href="contactus.html">CONTACT US</a></li>
+									<li><a href="locations.html">LOCATIONS</a></li>
+									<li><a href="careers.html">CAREERS</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</main>
+		<footer id="footer"></footer>
+	</body>
 
-    </main>
-    <footer id="footer"></footer>
-</body>
-
-</html> 
+</html>

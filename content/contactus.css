@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Caesar+Dressing&display=swap');
+h1{
+	font-family:caesar dressing;
+	padding-top:10px;
+	text-align:center;
+	color:#ffcc00;
+}
+form{
+	border:5px solid dark-gray;
+	font-family:caesar dressing;
+	margin-left:30%;
+	margin-right:30%;
+	margin-top:10px;
+	margin-bottom:20px;
+	padding-top:10px;
+	background:gray;
+}
+label{
+	color:white;
+}
+input, textarea{
+	font-family:caesar dressing;
+	color:#ffcc00;
+}
+.impotantFields{
+	color:#ffcc00;
+}
+#errorFName, #errorLName, #errorEmail, #errorPhone, #errorMessage{
+	display:none;
+	color:#ddaa00;
+	font-family:caesar dressing;
+}
+#mail, #either{
+	margin-left:10px;
+}
+p{
+	display:none;
+}
+div{
+	margin-bottom:10px;
+	margin-left:30%;
+}
+#submit{
+	font-family:caesar dressing;
+	font-size:20px;
+	margin-top:30px;
+	margin-bottom:20px;
+	margin-left:30%;
+	height:40px;
+	width:150px;
+	background:#ffcc00;
+	color:black;
+	border-radius:10px;
+	border:none;
+	box-shadow:0 5px #ddaa00;
+	cursor:pointer;
+}
+#submit:hover{
+	background-color:yellow;
+}
+#submit:active{
+	background-color:yellow;
+	box-shadow:0 5px #ffcc00;
+	transform:translateY(4px);
+	
+}
+#little_astronaut{
+	height:300px;
+	width:200px;
+	/*padding-left:10%;*/
+	padding-top:5%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+   /* width: 50%;*/
+
+}
+#thanks_msg{
+	display:none;
+	text-align:center;
+}
+#thanks{
+	color:#ffcc00;
+	font-size:40px;
+	font-family:caesar dressing;
+	text-align:center;
+	margin-left:0;
+	padding-top:20px;
+	-webkit-animation-name:twinkle;
+	-webkit-animation-duration:2s;
+	animation-name:twinkle;
+	animation-duration:2s;
+	animation-iteration-count:infinite;
+}
+@-webkit-keyframes twinkle{
+	from{color:#ffcc00;}
+	to{color:white;}
+}
+@keyframes twinkle{
+	from{color:#ffcc00;}
+	to{color:white;}
+}

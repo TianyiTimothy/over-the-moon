@@ -1,8 +1,15 @@
-.pagebox{
-    margin: 100px auto 0;
-    width: 100px;
-    height: 100px;
-    border: 1px solid white;
-    text-align: center;
-    line-height: 100px;
+#sitemap,
+#sitemap ul{
+	list-style: inherit;
+	padding-left: 25px;
+}
+#sitemap li{
+	padding: 10px;
+}
+#sitemapWrapper{
+	width: 40%;
+	margin: 0 auto;
+	padding: 100px 0 100px 25%;
+	background: #808080 url(../img/sitemap.png);
+	
 }

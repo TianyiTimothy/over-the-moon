@@ -1,0 +1,160 @@
+html{
+	box-sizing:border-box;
+}
+*,*::before, *::after{
+	box-sizing: inherit;
+}
+body{
+	background-color: black;
+}
+#container{
+	color:white;
+	font-family: 'Caesar Dressing', cursive;
+}
+.img{
+	width:18em;
+}
+#head1{
+	background-image: url('../img/star_b.gif');
+	width:100%;
+	height:300px;
+	border-bottom-left-radius: 50% 20%;
+	border-bottom-right-radius: 50% 20%;
+	display: flex;
+	flex-flow: row wrap;
+	margin-left: 1em;
+	margin-right:1em;
+}
+#head1_1{
+	flex:2 1 50%;
+	margin-left: 10em;
+	font-family: cursive;
+}
+#play{
+	background-color: #ddaa00;
+	border:1px solid #ddaa00;
+	margin-top: 2em;
+	display: inline-block;
+	color:black;
+	padding:10px;
+	border-radius: 25%;
+}
+#rules{
+	color:white;
+	display: flex;
+	flex-flow: row wrap;
+}
+#win{
+	color:#ddaa00;
+}
+#rules_1{
+	flex:2 0 0;
+	margin:2em;
+	font-size: 20px;
+}
+#rules_1 ul{
+	list-style:none;
+}
+.button{
+	height:10em;
+	width:6em;
+	margin:2em;
+	flex:2 0 0;
+	margin-top:2em;
+	font-size: 30px;
+}
+#form{
+	color:black;
+	text-align: center;
+	margin:1em;
+	background-color: grey;
+	font-size: 20px;
+}
+#fname {
+	margin-top:2em;
+	margin-left:3em;
+	margin-bottom: 2em;
+	font-size:20px;
+	background-color:#ddaa00;
+	border:1px solid black;
+}
+#lname{
+	margin-left:3.3em;
+	font-size: 20px;
+	margin-bottom: 2em;
+	background-color: #ddaa00;
+	border:1px solid black;
+}
+#email{
+	margin-left: 1.8em;
+	font-size: 20px;
+	background-color: #ddaa00;
+	border:1px solid black;
+}
+.button2{
+	margin:2em;
+	height:5em;
+	font-size: 20px;
+	color:#ddaa00;
+	background-color: black;
+	border:1px solid black;
+	border-radius: 25%;
+	padding:1em;
+}
+#form2{
+	display: none;
+}
+#contest{
+	background-color: black;
+	border:1px solid black;
+	width:100%;
+	margin-top:5em;
+	display: flex;
+	flex-flow: row wrap;
+}
+.pic{
+	background-color: grey;
+	height:70px;
+	width:5px;
+	margin: 15px;
+	flex: 2 2 20%;
+	color:red;
+	font-size: 30px;
+}
+#unlock{
+	background-color:grey;
+	width: 100%;
+	margin-top: 5em;
+	height:120px;
+	border:20px solid black;
+	margin-bottom: 3px;
+	text-align: center;
+}
+.lock{
+	color:red;
+	font-size: 50px;
+	background-color: transparent;
+	text-align: center;
+	display: inline-block;
+
+}
+#key{
+	display: hidden;
+}
+.key{
+	width:50px;
+	background-color: transparent;
+}
+#count{
+
+	color:#ddaa00;
+}
+
+
+
+
+
+
+
+
+

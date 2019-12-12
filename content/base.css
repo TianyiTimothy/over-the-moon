@@ -1,5 +1,4 @@
 /* basic */
-
 * {
     padding: 0;
     margin: 0;
@@ -64,7 +63,7 @@ a:hover {
 }
 
 #header #logo {
-    height: 50px;
+    height: 49px;
 }
 
 #header ul {
@@ -90,7 +89,7 @@ a:hover {
 /* footer */
 
 #footer {
-    height: 200px;
+    height: 300px;
     border-top: #666 1px solid;
 }
 
@@ -100,4 +99,41 @@ a:hover {
     display: inline-block;
     margin-left: 2000px;
     transition: all 2s linear;
+}
+#footer #astronautWrapper {
+    height: 100px;
+}
+
+#footer .footer-title {
+    font-size: 1.7em;
+}
+
+#footer ul {
+    margin-top: 50px;
+}
+
+#footer a {
+    color: #EEE;
+}
+
+#footer a:hover {
+    color: #DDD;
+}
+
+#footer #quick-links,
+#footer #contact-me {
+    width: 50%;
+    text-align: center;
+}
+
+#footer #quick-links {
+    float: left;
+}
+
+#footer #contact-me {
+    float: right;
+}
+
+#footer ul img {
+    margin-left: 20px;
 }
